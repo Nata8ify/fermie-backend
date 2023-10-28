@@ -6,7 +6,7 @@ import java.time.LocalDateTime
 @Entity
 @Table(name = "data_ferment")
 class FermentEntity(
-    @Id @GeneratedValue(strategy = GenerationType.IDENTITY) @Column(name = "ferm_id") val fermId: Long,
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY) @Column(name = "ferm_id") val fermId: Long? = null,
     @Column(name = "ferm_category") val fermCategory: Long,
     @Column(name = "ferm_ferment_owner_id") val fermFermentOwnerId: Long,
     @Column(name = "ferm_title") val fermTitle: String,

@@ -9,4 +9,5 @@ spring:
     password: ${DATASOURCE_PASSWORD}
 # General Configuration
 application:
-  enable-single-user: ${APP_ENABLE_SINGLE_USER:false}
+  single-owner-mode:
+    enable: ${APP_ENABLE_SINGLE_USER_MODE:false}
